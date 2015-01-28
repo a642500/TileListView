@@ -42,6 +42,7 @@ public class TileListView extends ListView {
                 fitHeight();
             }
         });
+        fitHeight();
     }
 
     /**
