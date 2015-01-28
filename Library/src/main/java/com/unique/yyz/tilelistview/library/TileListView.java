@@ -36,6 +36,7 @@ public class TileListView extends ListView {
     public void setAdapter(ListAdapter adapter) {
         super.setAdapter(adapter);
 
+        //anonymous object ensures this cannot be removed.
         adapter.registerDataSetObserver(new DataSetObserver() {
             @Override
             public void onChanged() {
