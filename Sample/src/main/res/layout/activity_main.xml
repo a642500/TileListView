@@ -10,6 +10,7 @@
                 tools:context=".MainActivity">
 
     <com.unique.yyz.tilelistview.library.TileListView
+            android:id="@+id/list"
             android:background="#ccc"
             android:layout_width="300dp"
             android:layout_height="300dp"

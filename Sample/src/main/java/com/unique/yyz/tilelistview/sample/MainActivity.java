@@ -4,6 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import com.unique.yyz.tilelistview.library.TileListView;
+
+import java.lang.reflect.Array;
+import java.util.Collections;
 
 
 public class MainActivity extends Activity {
@@ -11,7 +18,10 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sample_tile_list_view);
+        setContentView(R.layout.activity_main);
+
+        ((TileListView) findViewById(R.id.list)).setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new String[]{
+                "ItemA", "ItemB", "ItemC", "ItemD", "ItemE", "ItemF", "ItemG", "ItemH"}));
     }
 
 
